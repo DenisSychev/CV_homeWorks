@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home work 3</title>
+</head>
+
+<body>
+    <h3>1. Что выведет alert(typeof NaN); ?</h3>
+    <p>number</p>
+    <p>NaN — not a number, поэтому предполагаю что NaN имеет тип "number" т. к. применяется при работе с числами</p>
+    <h3>2. Что выведет alert(NaN === NaN); ?</h3>
+    <p>false</p>
+    <p>NaN единственное значение которое ничего не равно в том числе себе самому. </p>
+    <h3>3. 0.1 + 0.2 == 0.3 ?</h3>
+    <p>Неравно</p>
+    <p>"Настоящее" значение 0.1, 0.2 имеет больше знаков в дробной части из-за особенности хранения чисел в памяти
+        компьютера.</p>
+    <h3>4. Какой тип будет иметь переменная a, если она создается при помощи следующего кода: var a = "a,b".split(',');
+    </h3>
+    <p>object массив</p>
+    <p>В JS всё объект, соответственно объявленная а - это тоже объект. Метод split(','), превращает строку в массив с
+        разделителем ",".</p>
+    <h3>5. Сделать так, чтобы при нажатии на элемент <а> алертом выводилось «Hello world!».</h3>
+    <a href="" onclick="messageAlert()">Нажмите на этот элемент А</a>
+    <h3>6. Найти все элементы div с классом one, а также все элементы p с классом two. Затем добавить им всем класс
+        three и визуально плавно спустить вниз.</h3>
+        <div class="one">div с классом one</div>
+        <p class="one">p с классом one</p>
+        <div class="one">div с классом one</div>
+        <p class="one">p с классом one</p>
+        <div class="two">div с классом two</div>
+        <p class="two">p с классом two</p>
+        <div class="two">div с классом two</div>
+        <p class="two">p с классом two</p>
+    <h3>7. Выбрать видимый div с именем red, который содержит тег span.</h3>
+    <div name='red'>name = red</div>
+    <div name='red'><span>name = red + span</span></div>
+    <div name='blue'><span>name = blue + span</span></div>
+    <h3>8. Привести пример замыкания.</h3>
+    <a href="" onclick="sayHelloHabrahabr()">Кликните сюда, что бы увидеть результат работы замыкания</a>
+    <h3>9. Написать функцию, которая уменьшает или увеличивает указанное время на заданное количество минут, например:
+        changeTime('10:00', 1) //return '10:01'
+        changeTime('10:00', -1) //return '09:59'
+        changeTime('23:59', 1) //return '00:00'
+        changeTime('00:00', -1) //return '23:59'</h3>
+    <h3>10. Написать функцию, возвращающую градус, на который указывают часовая и минутная стрелки в зависимости от
+        времени, например:
+        clock_degree("00:00") returns : "360:360"
+        clock_degree("01:01") returns : "30:6"
+        clock_degree("00:01") returns : "360:6"
+        clock_degree("01:00") returns : "30:360"
+        clock_degree("01:30") returns : "30:180"
+        clock_degree("24:00") returns : "Check your time !"
+        clock_degree("13:60") returns : "Check your time !"
+        clock_degree("20:34") returns : "240:204"</h3>
+    <h3>11. Написать простую игру «Угадай число». Программа загадывает случайное число от 0 до 100. Игрок должен вводить
+        предположения и получать ответы «Больше», «Меньше» или «Число угадано».</h3>
+    <script defer src="hw-3.js"></script>
+</body>
+
+</html>
