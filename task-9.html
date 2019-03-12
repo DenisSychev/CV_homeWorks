@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ДЗ 3. Задание 9</title>
+</head>
+
+<body>
+    <script>
+        var date = new Date();
+        const nowDate = (`${date.getHours()}:${date.getMinutes().toString().padStart(2, '0')}`);
+        const minutes =
+            prompt(`На какое количество минут надо увеличить или уменьшить текущее время ${nowDate} \nдля уменьшения число с "-"`);
+        alert(`Вы указали ${minutes}.\nРезультат ${changeTime(minutes)}`);
+
+        function changeTime(minutes) {
+            if (isNaN(minutes)) {
+                return (`Вы ввели не число.`)
+            }
+            date.setMilliseconds(minutes * 60000);
+            return (`${date.getHours()}:${date.getMinutes().toString().padStart(2, '0')}`);
+        }
+    </script>
+</body>
+
+</html>
