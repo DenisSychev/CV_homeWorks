@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ДЗ 3. Задание 11</title>
+</head>
+
+<body>
+    <script>
+        var riddle = Math.round(Math.random() * 100);
+        console.log(`Загаданное число ${riddle}`);
+        var answer =
+            +prompt(`Программа загадала случайное число от 0 до 100. Угадайте это число. \nВведите предположение и получите ответ`);
+        console.log(`answer = ${answer}`);
+        if (isNaN(answer)) {
+            alert(`Вы указали не число`);
+        } else {
+            alert(`Вы указали ${answer}.\nРезультат ${guess(riddle, answer)}`)
+        }
+
+        function guess(riddle, answer) {
+            
+            console.log(`Загаданное число ${riddle}`);
+            console.log(`Введённое пользователем значение ${answer}`)
+            if (riddle > answer) {
+                return (`Загаданное число больше. Поробуйте снова`)
+            } else if (riddle < answer) {
+                return (`Загаданное число меньше. Поробуйте снова`)
+            } else if (riddle == answer) {
+                return (`Число угадано`)
+            };
+        }
+    </script>
+</body>
+
+</html>
