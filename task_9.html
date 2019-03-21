@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 9</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            line-height: 2;
+        }
+
+        caption {
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        th {
+            border: 1px solid black;
+            background-color: gainsboro;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px 5px;
+        }
+
+        div {
+            border: 1px solid black;
+        }
+
+        .one {
+            float: left;
+        }
+
+        .two {
+            float: left;
+        }
+
+        .three {
+            float: right
+        }
+    </style>
+</head>
+
+<body>
+    <h3>9. Есть ячейка таблицы, в ней 3 дива, в каждом диве – по слову. На первый див применен стиль float: left; на
+        третий – float: right. Что нужно применить на второй див, чтобы все три надписи/дивы были в одной горизонтальной
+        строке, то есть первый имел бы выравнивание по левому краю, третий – по правому, а второй – по центру?</h3>
+    <table>
+        <caption>Ячейка таблицы, в ней 3 дива</caption>
+        <tr>
+            <th>Первый обычный столбец</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="one">Первый див</div>
+                <div class="two">Второй див</div>
+                <div class="three">Третий див</div>
+            </td>
+        </tr>
+    </table>
+
+    <h3>На второй див я применил float: left; и все три дива выстроились в одну горизонтальную строку.</h3>
+</body>
+
+</html>
